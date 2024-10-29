@@ -1,0 +1,216 @@
+:root {
+    --ff-primary: 'Montserrat', sans-serif;
+    --fw-bold: 800;
+    --fw-med: 600;
+    --fw-reg: 200;
+    --clr-light: #FEFFFF; /* for primary text */
+    --clr-dark: #718096; /* for secondary dark text*/
+    --clr-accent: #171923;
+    --clr-highlights: #ED64A6; /* brighter pop */
+    --clr-primary: #1A202C;
+}
+
+/* Commons */
+
+body {
+    background-color: var(--clr-primary);
+}
+
+hr {
+    color: var(--clr-dark);
+    width: 60%;
+    height: 10px;
+}
+
+.section-title {
+    font-family: var(--ff-primary);
+    color: var(--clr-light);
+    margin: 2em 0em
+}
+
+.section-title h1 {
+    font-weight: var(--fw-med);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #2D3748;
+    font-family: var(--ff-primary);
+    color: var(--clr-light);
+    text-align: justify;
+}
+
+/* Hero section */
+
+#hero {
+    height: 100vh;
+}
+
+/* Navbar specific modifications */
+.navbar-container {
+    background-color: var(--clr-accent);
+    max-width: 100%; /* override Bootstrap's current max-width to extend navbar */
+}
+
+.navbar-container a {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-med);
+    color: var(--clr-light);
+    margin-right: 2em;
+}
+
+/* About-page specific modifications */
+
+.hero-container {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-title {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    color: var(--clr-light);
+}
+
+.main-title > h1 {
+    font-weight: var(--fw-bold);
+}
+
+.main-subtitle {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-light);
+    color: var(--clr-highlights);
+}
+
+.secondary-subtitle {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-light);
+    color: var(--clr-dark);
+}
+
+.hero-container > button {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-med);
+    background-color: var(--clr-highlights);
+}
+
+.hero-img {
+    transform: translateY(45%);
+    margin-left: 3em;
+} 
+
+/* Skills */
+
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+    justify-content: center;
+    gap: 1.5em;
+    padding-bottom: 2em;
+}
+
+.skill-item {
+    font-family: var(--ff-primary);
+    background-color: var(--clr-highlights);
+    border-radius: 5%;
+}
+
+.skill-item > h6 {
+    font-weight: var(--fw-reg);
+    margin: 0.5em;
+    color: var(--clr-light);
+}
+
+
+/* Experiences */
+#experience > .container {
+    width: 80%;
+}
+
+.experience-card .col-lg-2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Education */
+
+.education-container {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.education-container .secondary-subtitle {
+    width: 60%;
+}
+ /* Projects */
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+}
+
+.card button {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-med);
+    background-color: var(--clr-highlights);
+}
+
+/* Articles */
+
+#articles .container {
+    width: 90%;
+    color: var(--clr-light);
+    font-family: var(--ff-primary);
+}
+
+#articles img {
+    width: 250px;
+    height: 210px;
+    object-fit: cover;
+}
+
+/* Footer */
+.end-container {
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.end-container i {
+    height: 200px;
+}
+
+.end-section > a {
+    text-decoration: none;
+    color: inherit;
+}
