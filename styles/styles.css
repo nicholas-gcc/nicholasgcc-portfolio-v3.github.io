@@ -206,11 +206,7 @@ section {
     text-align: center;
 }
 
-.end-container i {
-    height: 200px;
-}
-
-.end-section > a {
+#end-section a {
     text-decoration: none;
     color: inherit;
 }
